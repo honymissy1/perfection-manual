@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MOP Manual</string>
+    <string name="title_activity_main">MOP Manual</string>
+    <string name="package_name">com.mopmanual.app</string>
+    <string name="custom_url_scheme">com.mopmanual.app</string>
+</resources>
