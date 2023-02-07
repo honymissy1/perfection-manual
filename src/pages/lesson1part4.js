@@ -1,5 +1,5 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,
-    IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonIcon } from '@ionic/react';
+    IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonIcon, IonBackButton } from '@ionic/react';
 
  import {albumsOutline} from  'ionicons/icons'
  import '../components/ExploreContainer.css';
@@ -15,6 +15,9 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
            <IonButtons slot="start">
              <IonMenuButton />
            </IonButtons>
+           <IonButtons slot="start">
+            <IonBackButton></IonBackButton>
+          </IonButtons>
            <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 1 Part 4</IonTitle>
            <IonTitle style={{fontSize: '14px'}}>22-January-2023</IonTitle>
          </IonToolbar>

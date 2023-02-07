@@ -1,6 +1,6 @@
 import { IonButtons, IonContent, IonHeader,
    IonMenuButton, IonPage, IonTitle, IonToolbar,
-   IonCard, IonCardHeader, IonCardContent, IonCardTitle
+   IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonBackButton
  } from '@ionic/react';
 
  import '../components/ExploreContainer.css';
@@ -16,6 +16,9 @@ import { IonButtons, IonContent, IonHeader,
            <IonButtons slot="start">
              <IonMenuButton />
            </IonButtons>
+           <IonButtons slot="start">
+            <IonBackButton></IonBackButton>
+          </IonButtons>
            <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 1 Part 2</IonTitle>
            <IonTitle style={{fontSize: '14px'}}>8-January-2023</IonTitle>
          </IonToolbar>

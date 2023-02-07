@@ -1,5 +1,5 @@
 import { IonButtons,IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,
-    IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonIcon
+    IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonIcon, IonBackButton
  
 } from '@ionic/react';
 import { useParams } from 'react-router';

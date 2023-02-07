@@ -1,6 +1,6 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,
-   IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonButton } from '@ionic/react';
-import { useParams } from 'react-router';
+   IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonButton, IonBackButton } from '@ionic/react';
+
 import '../components/ExploreContainer.css';
 import Data from '../asset/data/lesson1.json';
 import Img from '../asset/lesson1.jfif'
@@ -13,6 +13,10 @@ const Page = () => {
         <IonToolbar>
           <IonButtons slot="start">
             <IonMenuButton />
+          </IonButtons>
+          
+          <IonButtons>
+            <IonBackButton></IonBackButton>
           </IonButtons>
           <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 1 Part 1</IonTitle>
           <IonTitle style={{fontSize: '14px'}}>1-January-2023</IonTitle>
