@@ -1,4 +1,4 @@
-import { IonButtons,IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,
+import { IonButtons,IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
     IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonIcon, IonBackButton
  
 } from '@ionic/react';
@@ -16,7 +16,7 @@ return (
 <IonHeader>
   <IonToolbar>
     <IonButtons slot="start">
-      <IonMenuButton />
+      <IonBackButton></IonBackButton>
     </IonButtons>
     <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 2 part 3</IonTitle>
     <IonTitle style={{fontSize: '14px'}}>12-Febuary-2023</IonTitle>

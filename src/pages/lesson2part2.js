@@ -16,9 +16,6 @@ return (
 <IonHeader>
   <IonToolbar>
     <IonButtons slot="start">
-      <IonMenuButton />
-    </IonButtons>
-    <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>
     <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 2 part 2</IonTitle>

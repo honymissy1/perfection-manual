@@ -1,5 +1,5 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,
-    IonCardContent, IonCard, IonCardTitle, IonCardHeader, IonIcon      
+    IonCardContent, IonCard, IonCardTitle, IonCardHeader, IonIcon, IonBackButton      
 } from '@ionic/react';
 import {albumsOutline} from  'ionicons/icons';
 import { useParams } from 'react-router';
@@ -14,8 +14,8 @@ return (
 <IonPage>
 <IonHeader>
   <IonToolbar>
-    <IonButtons slot="start">
-      <IonMenuButton />
+  <IonButtons slot="start">
+      <IonBackButton></IonBackButton>
     </IonButtons>
     <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 5 Part 1</IonTitle>
     <IonTitle style={{fontSize: '14px'}}>14-May-2023</IonTitle>

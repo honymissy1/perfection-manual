@@ -17,7 +17,7 @@ import { IonButtons, IonContent, IonHeader,
             <IonButtons slot="start">
               <IonMenuButton />
             </IonButtons>
-            <IonTitle style={{fontWeight: '900', color: 'green'}}>Sunday School Manual</IonTitle>
+            <IonTitle style={{fontWeight: '900', color: 'green'}}>Ministry Of Perfection</IonTitle>
           </IonToolbar>
         </IonHeader>
   
@@ -28,12 +28,11 @@ import { IonButtons, IonContent, IonHeader,
             </IonToolbar>
           </IonHeader>
   
-          <div className="container" style={{background: 'white'}}>
-       
-           <div style={{border: '1px solid white', marginTop: '0px',width: '100%', height: '200px', backgroundImage: `url(${Img})`, backgroundSize: 'cover'}}>
-            <h1 style={{fontFamily: 'fantasy',fontWeight: '500', textAlign: 'center', color: 'white', fontSize: '30px'}}>Sunday School<br/>Manual</h1>
+           <div style={{backgroundRepeat: 'no-repeat',backgroundPosition: 'bottom center', border: '1px solid white', marginTop: '0px', width: '100%', height:'250px', backgroundImage: `url(${Img})`, backgroundSize: 'cover'}}>
+             <h1 style={{marginTop: '20px',fontFamily: 'fantasy',fontWeight: '500', textAlign: 'center', color: 'white', fontSize: '30px'}}>Sunday School<br/>Manual</h1>
            </div>
-        </div>
+          <div className="container" style={{background: 'white'}}></div>
+    
     
         <div style={{padding: '0px 15px'}}>
            <img src={Img3} alt="" style={{width: '70px', marginTop: '30px'}}/>

@@ -12,9 +12,9 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
      <IonPage>
        <IonHeader>
          <IonToolbar>
-           <IonButtons slot="start">
+           {/* <IonButtons slot="start">
              <IonMenuButton />
-           </IonButtons>
+           </IonButtons> */}
            <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>
@@ -65,7 +65,7 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
        <IonCard color="tertiary">
           <IonCardHeader style={{display: 'flex', alignItems: 'center'}}>
             <IonIcon icon={albumsOutline} style={{fontSize: '20px', marginRight:'15px'}}></IonIcon>
-            <IonCardTitle style={{fontSize: '20px', marginTop:'1px'}}>Conclusion</IonCardTitle>
+            <IonCardTitle style={{fontSize: '20px', marginTop:'1px'}}>CONCLUSION</IonCardTitle>
           </IonCardHeader>
 
           <IonCardContent>

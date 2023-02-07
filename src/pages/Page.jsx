@@ -11,11 +11,11 @@ const Page = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButtons slot="start">
+          {/* <IonButtons>
             <IonMenuButton />
-          </IonButtons>
+          </IonButtons> */}
           
-          <IonButtons>
+          <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>
           <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 1 Part 1</IonTitle>

@@ -41,7 +41,7 @@ const Page2 = () => {
         <IonCard color="tertiary">
           <IonCardHeader style={{display: 'flex', alignItems: 'center'}}>
             <IonIcon icon={albumsOutline} style={{fontSize: '20px', marginRight:'15px'}}></IonIcon>
-            <IonCardTitle style={{fontSize: '20px', marginTop:'1px'}}>Conclusion</IonCardTitle>
+            <IonCardTitle style={{fontSize: '20px', marginTop:'1px'}}>CONCLUSION</IonCardTitle>
           </IonCardHeader>
 
           <IonCardContent>

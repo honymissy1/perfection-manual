@@ -13,9 +13,9 @@ return (
 <IonPage>
 <IonHeader>
   <IonToolbar>
-    <IonButtons slot="start">
+    {/* <IonButtons slot="start">
       <IonMenuButton />
-    </IonButtons>
+    </IonButtons> */}
     <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>

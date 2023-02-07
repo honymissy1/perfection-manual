@@ -13,7 +13,7 @@ const ExploreContainer = ({ name }) => {
         amet nemo mollitia earum eaque omnis vel pariatur dicta, aliquam obcaecati.</p>
 
         <IonCard style={{padding: '15px'}}>
-          <h3>Conclusion</h3>
+          <h3>CONCLUSION</h3>
           <p style={{fontSize: '12px'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quo impedit. Aperiam.</p>
         </IonCard>
 

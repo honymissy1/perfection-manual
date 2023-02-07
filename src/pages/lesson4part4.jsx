@@ -1,5 +1,5 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,
-    IonCardContent, IonCard, IonCardTitle, IonCardHeader       
+    IonCardContent, IonCard, IonCardTitle, IonCardHeader , IonBackButton      
 } from '@ionic/react';
 import { useParams } from 'react-router';
 import '../components/ExploreContainer.css';
@@ -13,8 +13,8 @@ return (
 <IonPage>
 <IonHeader>
   <IonToolbar>
-    <IonButtons slot="start">
-      <IonMenuButton />
+  <IonButtons slot="start">
+      <IonBackButton></IonBackButton>
     </IonButtons>
     <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 4 Part 4</IonTitle>
     <IonTitle style={{fontSize: '14px'}}>16-April-2023</IonTitle>

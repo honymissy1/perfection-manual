@@ -13,12 +13,9 @@ return (
 <IonPage>
 <IonHeader>
   <IonToolbar>
-    <IonButtons slot="start">
-      <IonMenuButton />
+  <IonButtons slot="start">
+      <IonBackButton></IonBackButton>
     </IonButtons>
-    <IonButtons slot="start">
-            <IonBackButton></IonBackButton>
-          </IonButtons>
     <IonTitle style={{fontWeight: '900', color: 'green'}}>Lesson 2 part 4</IonTitle>
     <IonTitle style={{fontSize: '14px'}}>19-Febuary-2023</IonTitle>
   </IonToolbar>
