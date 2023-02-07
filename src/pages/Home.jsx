@@ -28,9 +28,9 @@ import { IonButtons, IonContent, IonHeader,
             </IonToolbar>
           </IonHeader>
   
-          <div className="container" style={{padding: '0px 0',background: 'white'}}>
+          <div className="container" style={{background: 'white'}}>
        
-           <div style={{border: '1px solid white',marginTop: '0',width: '100%', height: '200px', backgroundImage: `url(${Img})`, backgroundSize: 'cover'}}>
+           <div style={{border: '1px solid transparent', marginTop: '-20px',width: '100%', height: '200px', backgroundImage: `url(${Img})`, backgroundSize: 'cover'}}>
             <h1 style={{fontFamily: 'fantasy',fontWeight: '500', textAlign: 'center', color: 'white', fontSize: '30px'}}>Sunday School<br/>Manual</h1>
            </div>
         </div>

@@ -69,6 +69,7 @@ const App = () => {
   const handleBackButton = (e) => {
     e.preventDefault();
     history.goBack();
+    console.log('vadfhhb');
   };
 
   return (
