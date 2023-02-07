@@ -1,6 +1,7 @@
+import  { useEffect } from 'react';
 import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, useHistory } from 'react-router-dom';
 import Menu from './components/Menu';
 import Page from './pages/Page';
 
@@ -52,9 +53,27 @@ import Lesson5Part6 from './pages/lesson5part6';
 import Home from './pages/Home';
 setupIonicReact();
 
+
+
+
 const App = () => {
+  const history = useHistory();
+
+  useEffect(() => {
+    document.addEventListener('backbutton', handleBackButton);
+    return () => {
+      document.removeEventListener('backbutton', handleBackButton);
+    };
+  }, []);
+
+  const handleBackButton = (e) => {
+    e.preventDefault();
+    history.goBack();
+  };
+
   return (
-    <IonApp>
+    <div>
+          <IonApp>
       <IonReactRouter>
         <IonSplitPane contentId="main">
           <Menu />
@@ -167,6 +186,7 @@ const App = () => {
         </IonSplitPane>
       </IonReactRouter>
     </IonApp>
+    </div>
   );
 };
 
