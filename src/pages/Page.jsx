@@ -1,5 +1,6 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,
-   IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonButton, IonBackButton } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
+   IonCardHeader, IonCardTitle, IonCardContent, IonCard, IonButton, IonBackButton,
+   useIonViewWillEnter, useIonViewWillLeave  } from '@ionic/react';
 
 import '../components/ExploreContainer.css';
 import Data from '../asset/data/lesson1.json';
@@ -7,14 +8,23 @@ import Img from '../asset/lesson1.jfif'
 
 
 const Page = () => {
+  useIonViewWillEnter(() => {
+    document.addEventListener('backbutton', (e) => {
+      e.preventDefault();
+      if (window.history.length > 1) {
+        window.history.back();
+      }
+    });
+  });
+
+  useIonViewWillLeave(() => {
+    document.removeEventListener('backbutton', (e) => {});
+  });
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          {/* <IonButtons>
-            <IonMenuButton />
-          </IonButtons> */}
-          
           <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>

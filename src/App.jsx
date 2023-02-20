@@ -1,9 +1,11 @@
-import  { useEffect } from 'react';
+import  { useEffect, useContext } from 'react';
 import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route, useHistory } from 'react-router-dom';
 import Menu from './components/Menu';
 import Page from './pages/Page';
+
+import User from './context/user'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -51,14 +53,15 @@ import Lesson5Part4 from './pages/lesson5part4';
 import Lesson5Part5 from './pages/lesson5part5';
 import Lesson5Part6 from './pages/lesson5part6';
 import Home from './pages/Home';
+import Verify from './pages/verify';
 setupIonicReact();
 
 
-
-
 const App = () => {
-  const history = useHistory();
+  const user = useContext(User);
 
+  console.log(user);
+  const history = useHistory();
   useEffect(() => {
     document.addEventListener('backbutton', handleBackButton);
     return () => {
@@ -74,7 +77,7 @@ const App = () => {
 
   return (
     <div>
-          <IonApp>
+    <IonApp>
       <IonReactRouter>
         <IonSplitPane contentId="main">
           <Menu />
@@ -83,7 +86,11 @@ const App = () => {
               <Redirect to="/page/Inbox" />
             </Route> */}
             <Route path="/lesson1/part1" exact={true}>
-              <Page />
+              {user.user.paid ? (<Page />) : (<Home />)}
+            </Route>
+
+            <Route path="/verify" exact={true}>
+              <Verify />
             </Route>
 
             <Route path="/" exact={true}>
@@ -91,19 +98,23 @@ const App = () => {
             </Route>
 
             <Route path="/lesson1/part2" exact={true}>
-              <Lesson1part2 />
+            {user.user.paid ? (<Lesson1part2 />) : (<Home />)}
+              
             </Route>
 
             <Route path="/lesson1/part3" exact={true}>
-              <Lesson1part3 />
+            {user.user.paid ? ( <Lesson1part3 />) : (<Home />)}
+             
             </Route>
 
             <Route path="/lesson1/part4" exact={true}>
-              <Lesson1Part4 />
+            {user.user.paid ? (<Lesson1Part4 />) : (<Home />)}
+              
             </Route>
 
             <Route path="/lesson2/part1" exact={true}>
-              <Lesson2Part1 />
+            {user.user.paid ? (<Lesson2Part1 />) : (<Home />)}
+              
             </Route>
 
             <Route path="/lesson2/part2" exact={true}>
