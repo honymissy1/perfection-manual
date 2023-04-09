@@ -4,7 +4,6 @@ const App = () =>{
             <h1>Started</h1>
         </div>
     )
-
 }
 
 export default App
